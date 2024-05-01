@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+body{
+  margin: 0;
+  padding: 0;
+	background-color:#fff;
+	color: #ff0;
+	font-family: sans-serif;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;	
+}
+
+canvas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width:100%x;
+  height:100%;
+  background:#000;
+}
+
+.title-container{
+  position: absolute;
+  /*top: calc(50% - 110px);*/
+  /*left: calc(50% - 300px);*/
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Titillium Web', sans-serif;
+  color: #db970f;
+  /*-ms-transform: scale(2,3); /* IE 9 */
+  /*-webkit-transform: scale(2,3); /* Safari */
+  /*transform: scale(4,4); /* Standard syntax */
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: 7s linear;
+}
+
+.title-container.active{
+  -ms-transform: scale(0.1,0.1); /* IE 9 */
+  -webkit-transform: scale(0.1,0.1); /* Safari */
+  transform: scale(0.1,0.1); /* Standard syntax */
+}
+
+.title{
+  width: 100vw;
+  margin: 0;
+  padding: 0px 5px 0px 5px;
+  margin-top: 20vh;
+}
+
+section{
+  -webkit-perspective: 400;
+	width: 100%;
+}
+
+
+.card-head{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 10vh;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #db970f, 0 0 35px #db970f, 0 0 40px #db970f, 0 0 50px #db970f, 0 0 75px #db970f;
+}
+
+.text-container{
+	height: 100%;
+	overflow: visible;
+	font-size: 32px;
+	height: 1400px;
+  
+	-webkit-transform: rotateX(30deg);
+	-moz-transform: rotateX(30deg);
+	transform: rotateX(30deg);
+  -ms-transform-origin: 100% 100% 0; /* IE 9 */
+  -webkit-transform-origin: 100% 100% 0; /* Safari 3-8 */
+  transform-origin: 50% 50% 0;
+}
+
+.text-container{
+  -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+
+.text-container::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
+}
+
+
+.text-container p{
+  font-family: 'Titillium Web', sans-serif;
+  color: #db970f;
+	-webkit-transform: translateY(850px);
+	-moz-transform: translateY(850px);
+	transform: translateY(850px);
+	transition: 70s linear;
+	padding: 0 20%;
+  font-size: 10vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+.text-container.active p{
+  -webkit-transform: translateY(-8400px);
+	-moz-transform: translateY(-8400px);
+	transform: translateY(-8400px);
+}
+
+.dg {
+  display: none;
+}
